@@ -1,6 +1,7 @@
 import numpy as np
 
 def normalize_array(data,to_norm_mask):
+    #test
     normalized = np.zeros(data.shape)
     the_min = np.min(data[to_norm_mask]); the_max = np.max(data[to_norm_mask])
     normalized[to_norm_mask] = (data[to_norm_mask]- the_min)/(the_max-the_min)
